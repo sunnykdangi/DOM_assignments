@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="Male">M</option>
+		<option value="Female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+
+	<script type="text/javascript">
+		function showName() {
+			let inputname = document.getElementById("name");
+      let heading1 = document.getElementById("dName");
+      heading1.innerText = inputname.value;
+    }
+
+		function showGender() {
+			let inputgender = document.getElementById("gender");
+      let heading2 = document.getElementById("dGender");
+      heading2.innerText = inputgender.value;
+		}
+
+		function showEmail() {
+			let inputemail = document.getElementById("email");
+      let heading3 = document.getElementById("dEmail");
+      heading3.innerText = inputemail.value;
+		}
+
+		function showMobile() {
+			let inputmobile = document.getElementById("mobile");
+      let heading4 = document.getElementById("dMobile");
+      heading4.innerText = inputmobile.value;
+		}
+
+		function resetForm() {
+			let heading1 = document.getElementById("dName");
+      heading1.innerText = "";
+      let heading2 = document.getElementById("dGender");
+      heading2.innerText = "";
+      let heading3 = document.getElementById("dEmail");
+      heading3.innerText = "";
+      let heading4 = document.getElementById("dMobile");
+      heading4.innerText = "";
+		}
+
+		function resetDisplay() {
+			let heading1 = document.getElementById("dName");
+      heading1.innerText = "NAME";
+      let heading2 = document.getElementById("dGender");
+      heading2.innerText = "GENDER";
+      let heading3 = document.getElementById("dEmail");
+      heading3.innerText = "EMAIL";
+      let heading4 = document.getElementById("dMobile");
+      heading4.innerText = "MOBILE";
+		}
+	</script>
+</body>
+</html>
