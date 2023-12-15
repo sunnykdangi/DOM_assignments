@@ -1,0 +1,121 @@
+#parent{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 35%;
+    margin:auto;
+    height: 40rem;
+    margin-top: 2rem;
+
+}
+#max_min{
+    display: flex;
+    justify-content: space-evenly;
+}
+#head_min{
+    width: 6rem;
+    margin-left:7rem ;
+    margin-bottom: -1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#head_max{
+
+    display: block;
+    position: absolute;
+    width: 6rem;
+    margin-left: 19rem;
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#max_min>div{
+    border: 2px solid black;
+    width: 6rem;
+    height: 70px;
+    margin-top: 30px;
+}
+#max_min>div:first-child{
+    background-color: red;
+}
+#max_min>div:last-child{
+    background-color: green;
+}
+#min{
+    margin-left: 35px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 22px;
+}
+#max{
+    margin-left: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 22px;
+}
+/* Score Borad */
+#head_score{
+    margin-left: 40%;
+    margin-bottom: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#score{
+    border: 1px solid black;
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    height: 100px;
+}
+#input_score{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/* Buttons */
+#num{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    height: 13rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+#num>button{
+    border: 1px solid black;
+}
+#num>div:nth-child(10){
+    border: none;
+}
+.green{
+    background-color: rgb(78, 109, 48)
+}
+.orange{
+    background-color: rgb(255, 123, 0);
+}
+#purple{
+    background-color: purple;
+    color: white;
+}
+#num>button{
+    font-size: 22px;
+}
+
+/* Enter Button */
+#btn{
+    margin-left: 23%;
+    border: none;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 20px 6rem 20px 6rem;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#num>button:hover{
+    cursor: pointer;
+}
